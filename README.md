@@ -15,26 +15,27 @@ This project has just been initiated and is in the planning phase.
 
 TODO:
 
-| Step | Category            | Task                                                                     | Status     |
-| ---- | ------------------- | ------------------------------------------------------------------------ | ---------- |
-| 1    | ✅ Base OS Setup     | Install **Rocky Linux 9.6** on host machine                              | ✔ Done     |
-| 2    | ✅ Disk Setup        | Custom partitioning per best practices (XFS, LVM, EFI, `/var/log`, etc.) | ✔ Done     |
-| 3    | 🔐 System Hardening | Disable root SSH login                                                   | ☐ Todo     |
-| 4    | 🔐 System Hardening | Create `admin` and user accounts (`user1`...`userN`)                     | ☐ Todo     |
-| 5    | 🔐 System Hardening | Configure SSH keys, disable password auth                                | ☐ Todo     |
-| 6    | 🔐 System Hardening | Enable firewall (`firewalld` or `nftables`)                              | ☐ Todo     |
-| 7    | 🔐 System Hardening | Set up `fail2ban` or ssh rate-limiting                                   | ☐ Optional |
-| 8    | 🧠 Virtualization   | Install and configure KVM, libvirt, and `virt-manager`                   | ☐ Todo     |
-| 9    | 🖧 Networking       | Set up bridge networking (`br0`) for VMs                                 | ☐ Todo     |
-| 10   | 🖥️ VM Creation     | Create 1 head node + 12 compute node VMs + 1 GPU VM                      | ☐ Todo     |
-| 11   | 🧪 VM Testing       | Ensure all VMs boot, have network access, and SSH in/out works           | ☐ Todo     |
-| 12   | ⚙ SLURM Setup       | Install SLURM on head node, configure compute nodes                      | ☐ Todo     |
-| 13   | 🧪 Job Testing      | Submit basic test jobs via SLURM                                         | ☐ Todo     |
-| 14   | 🎮 GPU Integration  | Set up passthrough VM w/ NVIDIA drivers + CUDA toolkit                   | ☐ Todo     |
-| 15   | 📦 File Sharing     | (Optional) Set up NFS for `/home`, `/scratch`                            | ☐ Optional |
-| 16   | 📊 Monitoring       | (Optional) Install `htop`, `nmon`, or Prometheus stack                   | ☐ Optional |
-| 17   | 🧹 Automation       | Set up `virt-clone`, `cloud-init`, and Ansible roles                     | ☐ Todo     |
-| 18   | 🧼 Maintenance      | Script backups, log rotation, and regular cluster health checks          | ☐ Todo     |
+| Category            | Task                                                                     | Status     |
+| ------------------- | ------------------------------------------------------------------------ | ---------- |
+| ✅ Base OS Setup     | Install **Rocky Linux 9.6** on host machine                              | ✔ Done     |
+| ✅ Disk Setup        | Custom partitioning per best practices (XFS, LVM, EFI, `/var/log`, etc.) | ✔ Done     |
+| 🖧 Networking       | Set up Ethernet and WiFi: [Notes here](networking.md)                                                  | ✔ Done     |
+| 🔐 System Hardening | Disable root SSH login                                                   | ☐ Todo     |
+| 🔐 System Hardening | Create `admin` and user accounts (`user1`...`userN`)                     | ☐ Todo     |
+| 🔐 System Hardening | Configure SSH keys, disable password auth                                | ☐ Todo     |
+| 🔐 System Hardening | Enable firewall (`firewalld` or `nftables`)                              | ☐ Todo     |
+| 🔐 System Hardening | Set up `fail2ban` or ssh rate-limiting                                   | ☐ Optional |
+| 🧠 Virtualization   | Install and configure KVM, libvirt, and `virt-manager`                   | ☐ Todo     |
+| 🖧 Networking       | Set up bridge networking (`br0`) for VMs                                 | ☐ Todo     |
+| 🖥️ VM Creation     | Create 1 head node + 12 compute node VMs + 1 GPU VM                      | ☐ Todo     |
+| 🧪 VM Testing       | Ensure all VMs boot, have network access, and SSH in/out works           | ☐ Todo     |
+| ⚙ SLURM Setup       | Install SLURM on head node, configure compute nodes                      | ☐ Todo     |
+| 🧪 Job Testing      | Submit basic test jobs via SLURM                                         | ☐ Todo     |
+| 🎮 GPU Integration  | Set up passthrough VM w/ NVIDIA drivers + CUDA toolkit                   | ☐ Todo     |
+| 📦 File Sharing     | (Optional) Set up NFS for `/home`, `/scratch`                            | ☐ Optional |
+| 📊 Monitoring       | (Optional) Install `htop`, `nmon`, or Prometheus stack                   | ☐ Optional |
+| 🧹 Automation       | Set up `virt-clone`, `cloud-init`, and Ansible roles                     | ☐ Todo     |
+| 🧼 Maintenance      | Script backups, log rotation, and regular cluster health checks          | ☐ Todo     |
 
 ---
 
