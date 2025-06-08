@@ -19,11 +19,10 @@ TODO:
 | ------------------- | ------------------------------------------------------------------------ | ---------- |
 | ✅ Base OS Setup     | Install **Rocky Linux 9.6** on host machine                              | ✔ Done     |
 | ✅ Disk Setup        | Custom partitioning per best practices (XFS, LVM, EFI, `/var/log`, etc.) | ✔ Done     |
-| 🖧 Networking       | Set up Ethernet and WiFi: [Notes here](networking.md)                                                  | ✔ Done     |
-| 🔐 System Hardening | Disable root SSH login                                                   | ☐ Todo     |
-| 🔐 System Hardening | Create `admin` and user accounts (`user1`...`userN`)                     | ☐ Todo     |
-| 🔐 System Hardening | Configure SSH keys, disable password auth                                | ☐ Todo     |
-| 🔐 System Hardening | Enable firewall (`firewalld` or `nftables`)                              | ☐ Todo     |
+| 🖧 Networking       | Set up Ethernet and WiFi: [Notes here](networking.md)                      | ✔ Done     |
+| 🔐 System Hardening | Disable root SSH login. See [Hardening notes](hardening.md)               | ✔ Done     |
+| 🔐 System Hardening | Configure SSH key for admin as a test for later                           | ✔ Done     |
+| 🔐 System Hardening | Enable firewall (`firewalld` or `nftables`)                              | ✔ Done     |
 | 🔐 System Hardening | Set up `fail2ban` or ssh rate-limiting                                   | ☐ Optional |
 | 🧠 Virtualization   | Install and configure KVM, libvirt, and `virt-manager`                   | ☐ Todo     |
 | 🖧 Networking       | Set up bridge networking (`br0`) for VMs                                 | ☐ Todo     |
