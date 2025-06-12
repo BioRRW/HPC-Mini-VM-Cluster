@@ -128,12 +128,6 @@ Target Disk: /dev/nvme0n1
 
 ---
 
-## 📄 License
-
-This project is for educational and professional development purposes. No warranty implied.
-
----
-
 ## 👋 Author
 
 *Your Name* — aspiring HPC admin, cluster enthusiast, and system tinkerer
