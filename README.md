@@ -1,5 +1,5 @@
 # HPC-Mini-VM-Cluster
-Repository containing my HPC mini VM cluster I am building
+Repository documenting an HPC mini VM cluster I am building on a spare laptop - for fun!
 
 
 # 🖥️ Mini HPC Cluster on a Laptop Using KVM + Slurm + Rocky Linux
