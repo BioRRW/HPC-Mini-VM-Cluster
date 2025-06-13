@@ -128,6 +128,3 @@ Target Disk: /dev/nvme0n1
 
 ---
 
-## 👋 Author
-
-*Your Name* — aspiring HPC admin, cluster enthusiast, and system tinkerer
